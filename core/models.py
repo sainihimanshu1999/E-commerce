@@ -1,23 +1,20 @@
 from django.conf import settings
 from django.db import models
 
-# list of item displayed
-
 
 class Item(models.Model):
-    title = models.CharField(max_length=200)
+    tile = models.CharField(max_length=100)
     price = models.FloatField()
 
     def __str__(self):
-        return self.title
-
-# intermediate step
+        return self.tile
 
 
 class OrderItem(models.Model):
     item = models.ForeignKey(Item, on_delete=models.CASCADE)
 
-# ordered items just like an shoping cart
+    def __str__(self):
+        return self.tile
 
 
 class Order(models.Model):
