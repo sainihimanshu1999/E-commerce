@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'x8yr8ap=6yyxtkvf7)7&9#+mens=hkc5lhxhgy!)obyyf79@#w'
+SECRET_KEY = '0$8)v1j@6=hrr@je++cuj9tdl0q$2gf4f1n2%l^xse3vm-$u^*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'core',
+
 ]
 
 MIDDLEWARE = [
@@ -139,7 +140,5 @@ AUTHENTICATION_BACKENDS = (
     'allauth.account.auth_backends.AuthenticationBackend',
      
 )
-
-
 
 SITE_ID = 1

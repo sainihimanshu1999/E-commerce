@@ -9,9 +9,7 @@ class HomeView(ListView):
     template_name = "home.html"
 
 
-class ItemDetailView(DetailView):
-    model = Item
-    template_name = "product.html"
+
 
 
 def checkout(request):
@@ -22,7 +20,7 @@ def checkout(request):
 
 
 
-def product(request):
+def products(request):
     context = {
         'items' : Item.objects.all()
     }
