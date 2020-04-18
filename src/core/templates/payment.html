@@ -32,7 +32,7 @@
       text-decoration: none;
       -webkit-transition: all 150ms ease;
       transition: all 150ms ease;
-      float: left;
+      
       margin-left: 12px;
       margin-top: 28px;
     }
@@ -129,6 +129,7 @@
             <script src="https://js.stripe.com/v3/"></script>
 
             <form action="." method="post" id="payment-form">
+              {% csrf_token %}
             <div class="stripe-form-row">
                 <label for="card-element" id="stripeBtnLabel">
                 Credit or debit card

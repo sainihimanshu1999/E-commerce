@@ -147,5 +147,5 @@ SITE_ID = 1
 LOGIN_REDIRECT_URL = '/'
 
 
-STRIPE_SECRET_KEY = '<your test secret key here>'
-STRIPE_PUBLISHABLE_KEY = '<your test publishable key here>'
+STRIPE_SECRET_KEY = "sk_test_4eC39HqLyjWDarjtT1zdp7dc"
+STRIPE_PUBLISHABLE_KEY = ''
